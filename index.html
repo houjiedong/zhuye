@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>主页</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择消费类型</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .selection-container {
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>请选择消费类型</h1>
+    <div class="selection-container">
+        <button onclick="redirectTo('1')">实用性消费</button>
+        <button onclick="redirectTo('2')">奢侈性消费</button>
+    </div>
+    <div id="message" class="message"></div>
+
+    <script>
+        function redirectTo(type) {
+            const message = document.getElementById('message');
+            if (type === '1') {
+                // 跳转到实用性消费页面
+                message.textContent = "正在跳转到实用性消费页面...";
+                window.location.href = "https://houjiedong.github.io/shiyong/";
+            } else if (type === '2') {
+                // 跳转到奢侈性消费页面
+                message.textContent = "正在跳转到奢侈性消费页面...";
+                window.location.href = "https://houjiedong.github.io/-page/";
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
